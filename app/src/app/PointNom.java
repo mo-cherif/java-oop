@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package app;
 
-/**
- *
- * @author ISGA
- */
-public class PointNom {
+public class PointNom extends Point {
+    int x ;
+    int y;
+    String nom;
+    
+    void setPointNom(int x, int y, String nom) {
+        this.x = x;
+        this.y = y;
+        this.nom = nom;
+    }
+    
+    void setNom(String nom) {
+        this.nom = nom;
+    }
+    
+    public void affCoord() {
+        System.out.println("Coordonnees: " + 
+                            x + " " + y + "nom: "+ nom);
+    }
     
 }
